@@ -1,0 +1,87 @@
+/* Main Menu*/
+body{
+    background-color: bisque;
+    background-image: url(img/technology-code-coding-computer.jpg);
+    background-size: cover;
+}
+.menu{
+    padding:0px;
+    list-style-type: none;
+    background-color:#7fffd44a;
+    min-height: 40px;
+    width: 960px;
+    border-top: 3px solid rgba(105, 131, 131, 0.527);
+    border-bottom: 3px solid rgba(105, 131, 131, 0.527);
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+.menu li{
+    float: left;
+    border-left: 1px solid #6ae4bb65;
+    border-right: 2px solid #24d399a6;
+    position: relative;
+    transition: all 1s ;
+    
+
+}
+.menu li:last-child{
+    border-right: none;
+}
+.menu li:first-child{
+    border-left: none;
+}
+.menu li a{
+    text-decoration: none;
+    background-color:#7fffd421;
+    padding:11px 25px;
+    color: rgb(85, 7, 7);
+    display: block;
+    transition: all 1s ease-in-out;
+
+}
+.menu li a:hover{
+    background-color: rgba(105, 131, 131, 0.527);
+
+}
+/*DropDwon Menu*/
+ .menu li ul{
+     list-style-type: none;
+     padding: 0px;
+     left: -99999px;
+     position:absolute;
+
+ }
+ .menu li ul li{
+    border-left:none;
+    border-right:none;
+    border-top: 1px solid rgba(105, 131, 131, 0.527);
+    border-bottom: 2px solid rgba(105, 131, 131, 0.527);
+    float: none;
+    position: relative;
+ }
+ .menu li:hover ul{
+     left: 0px;
+
+ }
+
+/*Sub DropDwon Menu*/
+
+.menu li ul li ul{
+    position:absolute;
+    top: -99999px;
+
+}
+.menu li ul li:hover ul{
+    top: -0px;
+
+}
+.menu li ul li ul li{
+    left:172px ;
+    
+}
+.menu li ul li ul li a{
+    
+}
